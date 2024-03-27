@@ -10,10 +10,17 @@ body {
 }
 
 header {
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
   background-color: #333;
   color: #fff;
   padding: 20px;
-  text-align: center; /* Center align header content */
+  z-index: 1000; /* Ensure header appears above other content */
+}
+
+header h1 {
+  margin: 0;
 }
 
 nav ul {
@@ -31,9 +38,9 @@ nav ul li a {
 }
 
 #gallery {
-  padding: 50px 0;
+  padding-top: 100px; /* Add padding to push content below fixed header */
   overflow-y: auto; /* Enable vertical scrolling */
-  max-height: calc(100vh - 180px); /* Set maximum height to viewport height minus header and contact section */
+  max-height: calc(100vh - 100px); /* Set maximum height to viewport height minus header */
 }
 
 .gallery-container {
@@ -52,10 +59,16 @@ nav ul li a {
 }
 
 #contact {
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
   background-color: #333;
   color: #fff;
   padding: 20px;
-  text-align: center; /* Center align contact content */
+}
+
+#contact h2 {
+  margin: 0;
 }
 
 #contact p {
