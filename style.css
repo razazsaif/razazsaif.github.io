@@ -1,72 +1,71 @@
 /* Reset default margin and padding */
 body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 24px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  #gallery {
-    padding: 50px 0;
-  }
-  
-  .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .image {
-    margin: 10px;
-  }
-  
-  .image img {
-    width: 300px; /* Adjust image width as needed */
-    height: auto;
-  }
-  
-  #contact {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 20px;
-  }
-  
-  #contact p {
-    margin-bottom: 10px;
-  }
-  
-  #contact a {
-    color: #fff;
-  }
-  
-  #contact a:hover {
-    text-decoration: underline;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Center align header content */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#gallery {
+  padding: 50px 0;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100vh - 180px); /* Set maximum height to viewport height minus header and contact section */
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  margin: 10px;
+}
+
+.image img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto;
+}
+
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Center align contact content */
+}
+
+#contact p {
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #fff;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
